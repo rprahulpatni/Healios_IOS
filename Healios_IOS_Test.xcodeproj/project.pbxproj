@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		925A19A326B51F7E00D02C9D /* PostListDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19A226B51F7E00D02C9D /* PostListDetailsViewModel.swift */; };
+		925A19A526B51F8D00D02C9D /* PostListDetailsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19A426B51F8D00D02C9D /* PostListDetailsServices.swift */; };
+		925A19A726B51F9A00D02C9D /* PostListDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19A626B51F9A00D02C9D /* PostListDetailsModel.swift */; };
+		925A19A926B5256500D02C9D /* PostList+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19A826B5256500D02C9D /* PostList+TableView.swift */; };
+		925A19AC26B525C300D02C9D /* PostListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19AB26B525C300D02C9D /* PostListTVCell.swift */; };
+		925A19AE26B525EC00D02C9D /* PostCommentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19AD26B525EC00D02C9D /* PostCommentsTVCell.swift */; };
+		925A19B026B5261A00D02C9D /* PostUserTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19AF26B5261A00D02C9D /* PostUserTVCell.swift */; };
+		925A19B226B5267F00D02C9D /* PostListDetails+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19B126B5267F00D02C9D /* PostListDetails+TableView.swift */; };
+		925A19B726B535CF00D02C9D /* CustomLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925A19B526B535CF00D02C9D /* CustomLoaderView.xib */; };
+		925A19B826B535CF00D02C9D /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19B626B535CF00D02C9D /* CustomLoaderView.swift */; };
+		925A19BB26B53ACB00D02C9D /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19BA26B53ACB00D02C9D /* ExtensionUIView.swift */; };
+		925A19BD26B53B0600D02C9D /* ExtensionNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A19BC26B53B0600D02C9D /* ExtensionNSObject.swift */; };
+		927FF31A26B48C1A00FBF4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF31926B48C1A00FBF4D4 /* AppDelegate.swift */; };
+		927FF31C26B48C1A00FBF4D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF31B26B48C1A00FBF4D4 /* SceneDelegate.swift */; };
+		927FF32126B48C1A00FBF4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927FF31F26B48C1A00FBF4D4 /* Main.storyboard */; };
+		927FF32626B48C1C00FBF4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927FF32526B48C1C00FBF4D4 /* Assets.xcassets */; };
+		927FF32926B48C1C00FBF4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927FF32726B48C1C00FBF4D4 /* LaunchScreen.storyboard */; };
+		927FF33326B4923C00FBF4D4 /* PostListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF33226B4923C00FBF4D4 /* PostListVC.swift */; };
+		927FF33626B4926800FBF4D4 /* PostListDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF33526B4926800FBF4D4 /* PostListDetailsVC.swift */; };
+		927FF33A26B4955200FBF4D4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF33926B4955200FBF4D4 /* APIManager.swift */; };
+		927FF33C26B4A85000FBF4D4 /* MessagesText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF33B26B4A85000FBF4D4 /* MessagesText.swift */; };
+		927FF33E26B4A8C800FBF4D4 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF33D26B4A8C800FBF4D4 /* PostListViewModel.swift */; };
+		927FF34026B4AB4400FBF4D4 /* PostListServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF33F26B4AB4400FBF4D4 /* PostListServices.swift */; };
+		927FF34426B4AD0A00FBF4D4 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF34326B4AD0A00FBF4D4 /* PostListModel.swift */; };
+		927FF34626B4B05200FBF4D4 /* APIHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927FF34526B4B05200FBF4D4 /* APIHeaders.swift */; };
+		C2B94DDFB5659CFFD3B83E21 /* Pods_Healios_IOS_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726ADD7DDAE16E4545256306 /* Pods_Healios_IOS_Test.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		726ADD7DDAE16E4545256306 /* Pods_Healios_IOS_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healios_IOS_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		925A19A226B51F7E00D02C9D /* PostListDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDetailsViewModel.swift; sourceTree = "<group>"; };
+		925A19A426B51F8D00D02C9D /* PostListDetailsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDetailsServices.swift; sourceTree = "<group>"; };
+		925A19A626B51F9A00D02C9D /* PostListDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDetailsModel.swift; sourceTree = "<group>"; };
+		925A19A826B5256500D02C9D /* PostList+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostList+TableView.swift"; sourceTree = "<group>"; };
+		925A19AB26B525C300D02C9D /* PostListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTVCell.swift; sourceTree = "<group>"; };
+		925A19AD26B525EC00D02C9D /* PostCommentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsTVCell.swift; sourceTree = "<group>"; };
+		925A19AF26B5261A00D02C9D /* PostUserTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserTVCell.swift; sourceTree = "<group>"; };
+		925A19B126B5267F00D02C9D /* PostListDetails+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostListDetails+TableView.swift"; sourceTree = "<group>"; };
+		925A19B526B535CF00D02C9D /* CustomLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLoaderView.xib; sourceTree = "<group>"; };
+		925A19B626B535CF00D02C9D /* CustomLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
+		925A19BA26B53ACB00D02C9D /* ExtensionUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		925A19BC26B53B0600D02C9D /* ExtensionNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNSObject.swift; sourceTree = "<group>"; };
+		927FF31626B48C1A00FBF4D4 /* Healios_IOS_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healios_IOS_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		927FF31926B48C1A00FBF4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		927FF31B26B48C1A00FBF4D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		927FF32026B48C1A00FBF4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		927FF32526B48C1C00FBF4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		927FF32826B48C1C00FBF4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		927FF32A26B48C1C00FBF4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927FF33226B4923C00FBF4D4 /* PostListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListVC.swift; sourceTree = "<group>"; };
+		927FF33526B4926800FBF4D4 /* PostListDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDetailsVC.swift; sourceTree = "<group>"; };
+		927FF33926B4955200FBF4D4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		927FF33B26B4A85000FBF4D4 /* MessagesText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesText.swift; sourceTree = "<group>"; };
+		927FF33D26B4A8C800FBF4D4 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		927FF33F26B4AB4400FBF4D4 /* PostListServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListServices.swift; sourceTree = "<group>"; };
+		927FF34326B4AD0A00FBF4D4 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
+		927FF34526B4B05200FBF4D4 /* APIHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaders.swift; sourceTree = "<group>"; };
+		A79D4DEA69813BCBABEFA13B /* Pods-Healios_IOS_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healios_IOS_Test.release.xcconfig"; path = "Target Support Files/Pods-Healios_IOS_Test/Pods-Healios_IOS_Test.release.xcconfig"; sourceTree = "<group>"; };
+		D2D456E3EF608F64E9CA8A34 /* Pods-Healios_IOS_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healios_IOS_Test.debug.xcconfig"; path = "Target Support Files/Pods-Healios_IOS_Test/Pods-Healios_IOS_Test.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		927FF31326B48C1A00FBF4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B94DDFB5659CFFD3B83E21 /* Pods_Healios_IOS_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BFB39BEABBA03032B446E71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2D456E3EF608F64E9CA8A34 /* Pods-Healios_IOS_Test.debug.xcconfig */,
+				A79D4DEA69813BCBABEFA13B /* Pods-Healios_IOS_Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		90706A7702A39F78E1F00E61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				726ADD7DDAE16E4545256306 /* Pods_Healios_IOS_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		925A19AA26B525AD00D02C9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				925A19AB26B525C300D02C9D /* PostListTVCell.swift */,
+				925A19AD26B525EC00D02C9D /* PostCommentsTVCell.swift */,
+				925A19AF26B5261A00D02C9D /* PostUserTVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		925A19B326B5359900D02C9D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				925A19B426B535CF00D02C9D /* CustomLoader */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		925A19B426B535CF00D02C9D /* CustomLoader */ = {
+			isa = PBXGroup;
+			children = (
+				925A19B526B535CF00D02C9D /* CustomLoaderView.xib */,
+				925A19B626B535CF00D02C9D /* CustomLoaderView.swift */,
+			);
+			path = CustomLoader;
+			sourceTree = "<group>";
+		};
+		925A19B926B53ABA00D02C9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				925A19BC26B53B0600D02C9D /* ExtensionNSObject.swift */,
+				925A19BA26B53ACB00D02C9D /* ExtensionUIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		925A19C626B563AE00D02C9D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				927FF33D26B4A8C800FBF4D4 /* PostListViewModel.swift */,
+				925A19A226B51F7E00D02C9D /* PostListDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		925A19C726B563B800D02C9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				927FF34326B4AD0A00FBF4D4 /* PostListModel.swift */,
+				925A19A626B51F9A00D02C9D /* PostListDetailsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		925A19C826B56A0B00D02C9D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				927FF33F26B4AB4400FBF4D4 /* PostListServices.swift */,
+				925A19A426B51F8D00D02C9D /* PostListDetailsServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		925A19C926B56B0100D02C9D /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				927FF31926B48C1A00FBF4D4 /* AppDelegate.swift */,
+				927FF31B26B48C1A00FBF4D4 /* SceneDelegate.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		927FF30D26B48C1A00FBF4D4 = {
+			isa = PBXGroup;
+			children = (
+				927FF31826B48C1A00FBF4D4 /* Healios_IOS_Test */,
+				927FF31726B48C1A00FBF4D4 /* Products */,
+				0BFB39BEABBA03032B446E71 /* Pods */,
+				90706A7702A39F78E1F00E61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		927FF31726B48C1A00FBF4D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				927FF31626B48C1A00FBF4D4 /* Healios_IOS_Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		927FF31826B48C1A00FBF4D4 /* Healios_IOS_Test */ = {
+			isa = PBXGroup;
+			children = (
+				925A19C926B56B0100D02C9D /* ApplicationLayer */,
+				925A19AA26B525AD00D02C9D /* Views */,
+				927FF33026B4921300FBF4D4 /* ViewController */,
+				925A19C626B563AE00D02C9D /* ViewModels */,
+				925A19C726B563B800D02C9D /* Models */,
+				925A19B326B5359900D02C9D /* Helper */,
+				927FF33826B4953800FBF4D4 /* Utilities */,
+				927FF33726B4952F00FBF4D4 /* ApiManager */,
+				927FF31F26B48C1A00FBF4D4 /* Main.storyboard */,
+				927FF32526B48C1C00FBF4D4 /* Assets.xcassets */,
+				927FF32726B48C1C00FBF4D4 /* LaunchScreen.storyboard */,
+				927FF32A26B48C1C00FBF4D4 /* Info.plist */,
+			);
+			path = Healios_IOS_Test;
+			sourceTree = "<group>";
+		};
+		927FF33026B4921300FBF4D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				927FF33126B4921F00FBF4D4 /* PostListVC */,
+				927FF33426B4924A00FBF4D4 /* PostListDetailsVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		927FF33126B4921F00FBF4D4 /* PostListVC */ = {
+			isa = PBXGroup;
+			children = (
+				927FF33226B4923C00FBF4D4 /* PostListVC.swift */,
+				925A19A826B5256500D02C9D /* PostList+TableView.swift */,
+			);
+			path = PostListVC;
+			sourceTree = "<group>";
+		};
+		927FF33426B4924A00FBF4D4 /* PostListDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				927FF33526B4926800FBF4D4 /* PostListDetailsVC.swift */,
+				925A19B126B5267F00D02C9D /* PostListDetails+TableView.swift */,
+			);
+			path = PostListDetailsVC;
+			sourceTree = "<group>";
+		};
+		927FF33726B4952F00FBF4D4 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				925A19C826B56A0B00D02C9D /* Services */,
+				927FF33926B4955200FBF4D4 /* APIManager.swift */,
+				927FF34526B4B05200FBF4D4 /* APIHeaders.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		927FF33826B4953800FBF4D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				925A19B926B53ABA00D02C9D /* Extensions */,
+				927FF33B26B4A85000FBF4D4 /* MessagesText.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		927FF31526B48C1A00FBF4D4 /* Healios_IOS_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927FF32D26B48C1C00FBF4D4 /* Build configuration list for PBXNativeTarget "Healios_IOS_Test" */;
+			buildPhases = (
+				3CAB7767F1A7887A9684A43C /* [CP] Check Pods Manifest.lock */,
+				927FF31226B48C1A00FBF4D4 /* Sources */,
+				927FF31326B48C1A00FBF4D4 /* Frameworks */,
+				927FF31426B48C1A00FBF4D4 /* Resources */,
+				D3171672DA28E86FE74B0E81 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Healios_IOS_Test;
+			productName = Healios_IOS_Test;
+			productReference = 927FF31626B48C1A00FBF4D4 /* Healios_IOS_Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		927FF30E26B48C1A00FBF4D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					927FF31526B48C1A00FBF4D4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 927FF31126B48C1A00FBF4D4 /* Build configuration list for PBXProject "Healios_IOS_Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 927FF30D26B48C1A00FBF4D4;
+			productRefGroup = 927FF31726B48C1A00FBF4D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				927FF31526B48C1A00FBF4D4 /* Healios_IOS_Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		927FF31426B48C1A00FBF4D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927FF32926B48C1C00FBF4D4 /* LaunchScreen.storyboard in Resources */,
+				927FF32626B48C1C00FBF4D4 /* Assets.xcassets in Resources */,
+				925A19B726B535CF00D02C9D /* CustomLoaderView.xib in Resources */,
+				927FF32126B48C1A00FBF4D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CAB7767F1A7887A9684A43C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Healios_IOS_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3171672DA28E86FE74B0E81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Healios_IOS_Test/Pods-Healios_IOS_Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Healios_IOS_Test/Pods-Healios_IOS_Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Healios_IOS_Test/Pods-Healios_IOS_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		927FF31226B48C1A00FBF4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925A19B226B5267F00D02C9D /* PostListDetails+TableView.swift in Sources */,
+				927FF33E26B4A8C800FBF4D4 /* PostListViewModel.swift in Sources */,
+				925A19BB26B53ACB00D02C9D /* ExtensionUIView.swift in Sources */,
+				925A19BD26B53B0600D02C9D /* ExtensionNSObject.swift in Sources */,
+				925A19AE26B525EC00D02C9D /* PostCommentsTVCell.swift in Sources */,
+				925A19A326B51F7E00D02C9D /* PostListDetailsViewModel.swift in Sources */,
+				927FF33A26B4955200FBF4D4 /* APIManager.swift in Sources */,
+				925A19A926B5256500D02C9D /* PostList+TableView.swift in Sources */,
+				927FF33C26B4A85000FBF4D4 /* MessagesText.swift in Sources */,
+				927FF33626B4926800FBF4D4 /* PostListDetailsVC.swift in Sources */,
+				925A19A726B51F9A00D02C9D /* PostListDetailsModel.swift in Sources */,
+				925A19B826B535CF00D02C9D /* CustomLoaderView.swift in Sources */,
+				925A19AC26B525C300D02C9D /* PostListTVCell.swift in Sources */,
+				927FF34626B4B05200FBF4D4 /* APIHeaders.swift in Sources */,
+				925A19B026B5261A00D02C9D /* PostUserTVCell.swift in Sources */,
+				927FF31A26B48C1A00FBF4D4 /* AppDelegate.swift in Sources */,
+				925A19A526B51F8D00D02C9D /* PostListDetailsServices.swift in Sources */,
+				927FF31C26B48C1A00FBF4D4 /* SceneDelegate.swift in Sources */,
+				927FF33326B4923C00FBF4D4 /* PostListVC.swift in Sources */,
+				927FF34426B4AD0A00FBF4D4 /* PostListModel.swift in Sources */,
+				927FF34026B4AB4400FBF4D4 /* PostListServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		927FF31F26B48C1A00FBF4D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927FF32026B48C1A00FBF4D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		927FF32726B48C1C00FBF4D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927FF32826B48C1C00FBF4D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		927FF32B26B48C1C00FBF4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		927FF32C26B48C1C00FBF4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		927FF32E26B48C1C00FBF4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D456E3EF608F64E9CA8A34 /* Pods-Healios_IOS_Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Healios_IOS_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "NeoSoft.Healios-IOS-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		927FF32F26B48C1C00FBF4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79D4DEA69813BCBABEFA13B /* Pods-Healios_IOS_Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Healios_IOS_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "NeoSoft.Healios-IOS-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		927FF31126B48C1A00FBF4D4 /* Build configuration list for PBXProject "Healios_IOS_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927FF32B26B48C1C00FBF4D4 /* Debug */,
+				927FF32C26B48C1C00FBF4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		927FF32D26B48C1C00FBF4D4 /* Build configuration list for PBXNativeTarget "Healios_IOS_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927FF32E26B48C1C00FBF4D4 /* Debug */,
+				927FF32F26B48C1C00FBF4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 927FF30E26B48C1A00FBF4D4 /* Project object */;
+}
